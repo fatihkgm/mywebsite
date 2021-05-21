@@ -1,0 +1,82 @@
+<%- include("partials/general/generalHeader"); -%>
+<!-- Begin page content -->
+<main role="main" class="container">
+  <h1 class="mt-5">
+    I appreciate your time and consideration and hope that my skills and
+    experience align with your needs.
+  </h1>
+  <p class="lead">
+    Please note that,in order to dowload my resume you need an access code
+  </p>
+</main>
+
+<section class="container-md">
+  <dl class="row">
+    <dt class="col-sm-3">Access code :</dt>
+    <dd class="col-sm-9">
+      Please enter the access code in order to download my resume
+    </dd>
+
+    <dt class="col-sm-3">Why Acces Code Needed :</dt>
+    <dd class="col-sm-9">
+      <p>Just for privacy ;</p>
+      <p>I have included my phone number , address and more in my resume.</p>
+    </dd>
+
+    <dt class="col-sm-3">If you don't have the code</dt>
+    <dd class="col-sm-9">
+      Please contact me <b> "fatih.kgokmen@gmail.com"</b>
+    </dd>
+
+    <dt class="col-sm-3 text-truncate">Note :</dt>
+    <dd class="col-sm-9">
+      To open my resume , you need a copy of Adobe Acrobat Reader or an
+      alternative PDF reader installed on your computer.
+    </dd>
+  </dl>
+</section>
+
+<div class="dwnBtn">
+  <button
+    type="button"
+    class="btn btn-outline-secondary btn-lg"
+    onClick="passWord()"
+  >
+    DOWNLOAD
+  </button>
+</div>
+
+<script>
+  function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password', ' ');
+    while (testV < 3) {
+      if (!pass1) history.go(-1);
+      if (pass1.toLowerCase() === 'torono') {
+        alert('You Got it Right!');
+        window.open('/downloads/test.pdf');
+        break;
+      }
+      testV += 1;
+      var pass1 = prompt(
+        'Access Denied - Password Incorrect, Please Try Again.',
+        'Password'
+      );
+    }
+    if ((pass1.toLowerCase() != 'password') & (testV == 3)) history.go(-1);
+    return ' ';
+  }
+</script>
+
+<hr style="margin: 60px auto; opacity: 0.5" />
+<iframe
+  class="rounded mx-auto d-block col-md-5 px-0"
+  width="560"
+  height="400"
+  src="https://www.youtube.com/embed/oXMOE07fKv0"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+<%- include("partials/general/generalFooter"); -%>

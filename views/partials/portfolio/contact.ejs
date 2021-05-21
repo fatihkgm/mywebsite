@@ -1,0 +1,71 @@
+<section class="contact" id="contact">
+  <div class="max-width">
+    <h2 class="title">Contact me</h2>
+    <div class="contact-content">
+      <div class="column left">
+        <div class="text">Get in Touch</div>
+        <p>
+          Please use the <b>contact form</b> or send me email. You should
+          receive a responde from me within 3 days
+        </p>
+        <div class="icons">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <div class="info">
+              <div class="head">Name</div>
+              <div class="sub-title">Felix Gokmen</div>
+            </div>
+          </div>
+          <div class="row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info">
+              <div class="head">Address</div>
+              <div class="sub-title">Canada,ON</div>
+            </div>
+          </div>
+          <div
+            class="row"
+            onclick="window.open('mailto:felixgokmen@gmail.com','_blank')"
+            style="cursor: pointer"
+          >
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <div class="head">Email</div>
+              <div class="sub-title">felixgokmen@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column right">
+        <div class="text">Message me</div>
+        <form action="/post" class="contact-me">
+          <div class="fields">
+            <div class="field name">
+              <input type="text" placeholder="Name" id="name" required />
+            </div>
+            <div class="field email">
+              <input type="Email" placeholder="Email" id="maile" required />
+            </div>
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Subject" id="subject" required />
+          </div>
+          <div class="field textarea">
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Message.."
+              id="message"
+              required
+            ></textarea>
+          </div>
+          <div class="button">
+            <button type="submit" class="submit" name="button">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

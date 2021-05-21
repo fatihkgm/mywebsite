@@ -1,0 +1,252 @@
+<%- include("partials/portfolio/header"); -%>
+
+<section class="home" id="home">
+  <div class="max-width">
+    <div class="home-content">
+      <div class="text-1">Hello, My name is</div>
+      <div class="text-2">Felix Gokmen.</div>
+      <div class="text-3">
+        And I'm a Developer & <span class="typing"></span>
+      </div>
+      <a class="" href="/aboutme" target="_blank">LEARN MORE</a>
+    </div>
+  </div>
+</section>
+
+<!-- about section start -->
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">About Me</h2>
+    <div class="about-content">
+      <div class="column left">
+        <img id="gif" src="/images/drone.gif" alt="this slowpoke moves" />
+      </div>
+      <div class="column right">
+        <div class="text">
+          Hi there, I'm Felix <span class="typing-2"></span>
+        </div>
+        <p>
+          &ensp;&ensp;First and foremost, I love writing code and solve
+          practical problems. As taking the “Computer Programmer Analysts, “ I
+          have improved my software and technical skills in systems analysis and
+          design techniques by building projects and working with friends as a
+          team. I have been known among my friends as a responsible and
+          hard-working person. I am a hard worker who takes the grades very
+          seriously. I spent a lot of time studying and learning new skills, It
+          wasn’t an easy feat, but I managed to receive Dean's, Honor List. I
+          work on several assignments and projects and ensure that I always get
+          my work completed on time.
+        </p>
+        <p>
+          <i class="far fa-bookmark"></i>&ensp;&ensp;This website built by
+          &ensp; <i class="fab fa-node"></i> &ensp;Nodejs and deployed
+          heroku.Used bootstrap and fontawesome.<br />Created dependencies are ;
+          <br />
+          <i class="far fa-hand-point-right"></i> &ensp;body-parser, dotenv: ,
+          ejs: , express: , googleapis , mongoose, mongoose-encryption,
+          nodemailer, request, smtp,
+        </p>
+        <a href="https://www.buymeacoffee.com/felixgo" target="_blank"
+          ><i class="fas fa-coffee"></i> &ensp;&ensp;Buy me a coffee</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services section start -->
+<section class="services" id="services">
+  <div class="max-width">
+    <h2 class="title">VISIT MY CHANNEL</h2>
+    <div class="serv-content">
+      <div class="card">
+        <div class="box github" data-location="#service">
+          <div><img src="./images/github.png" /></div>
+          <div class="text">Github</div>
+          <p>
+            Please visit my GitHub account.Some repositories are private...!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box youtube" data-location="#service">
+          <div><img src="./images/youtube.png" /></div>
+          <div class="text">YouTube</div>
+          <p>Visit my YouTube Channel for short introduction.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box myblog" data-location="#service">
+          <div><img src="./images/www.png" /></div>
+          <div class="text">Website</div>
+          <p>Have a look at my web page.I'm still working for my blog</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box linkedIn" data-location="#service">
+          <div><img src="./images/linked.png" /></div>
+          <div class="text">LinkedIn</div>
+          <p>Go my LinkedIn account see latest activities and post</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- skills section start -->
+<%- include("partials/portfolio/skills"); -%>
+
+<!-- teams section start -->
+<section class="teams" id="teams">
+  <div class="max-width">
+    <h2 class="title">Academic Work Experience</h2>
+    <div class="carousel owl-carousel">
+      <div class="card">
+        <div
+          class="box gradvisory"
+          onclick="window.open('/gradvisory','_blank')"
+        >
+          <img src="/images/gradvisoryproject.png" alt="Gradvisory_Project" />
+          <div class="text">Capstone Project</div>
+          <p>
+            Django as a back-end framework, which uses python to control
+            templating, authentication, and run the machine learning algorithm
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box gradvisory" onclick="window.open('/post','_blank')">
+          <img src="/images/reactproject.png" alt="Gradvisory_Project" />
+          <div class="text">ReactJS</div>
+          <p>
+            E-commerce app with Redux, Hooks, GraphQL, ContextAPI, Stripe,
+            Firebase and handled online payments with Stripe API.
+          </p>
+        </div>
+      </div>
+      <div class="card dice_challenge">
+        <div
+          class="box"
+          onclick="window.open('https://www.youtube.com/watch?v=6jDCt98MZNA','_blank')"
+        >
+          <img src="/images/django.png" alt="dice_challenge" />
+          <div class="text">Python-Django</div>
+          <p>
+            Created User AuthenticationApp With Django,PostgreSQL and Facebook
+            and Google API.
+          </p>
+        </div>
+      </div>
+      <div class="card dice_challenge">
+        <div
+          class="box"
+          onclick="window.open('https://www.youtube.com/watch?v=Mywd43CitF0','_blank')"
+        >
+          <img src="/images/nodejs.png" alt="dice_challenge" />
+          <div class="text">NodeJS-AUTH</div>
+          <p>
+            Created User AuthenticationApp With Nodejs,PostgreSQL and Deployed
+            Heroku Server.
+          </p>
+        </div>
+      </div>
+      <div class="card dice_challenge">
+        <div
+          class="box"
+          onclick="window.open('https://www.youtube.com/watch?v=TJUkffipcjc','_blank')"
+        >
+          <img src="/images/ios.png" alt="dice_challenge" />
+          <div class="text">IOS Project</div>
+          <p>
+            This project is a mobile application that will be built using swift.
+            With the intended devices being IOS mobile.
+          </p>
+        </div>
+      </div>
+      <div class="card field_game">
+        <div
+          class="box"
+          onclick="window.open('https://www.youtube.com/watch?v=fh51C2ZSGEw','_blank')"
+        >
+          <img src="/images/angular.png" alt="angular" />
+          <div class="text">The Kgm Web</div>
+          <p>
+            Website Designer & Developer With years of experience, I will
+            modernize and optimize your website.
+          </p>
+        </div>
+      </div>
+      <div class="card field_game">
+        <div
+          class="box"
+          onclick="window.open('https://thekgmweb.com/','_blank')"
+        >
+          <img src="/images/kgmweb.png" alt="field_game" />
+          <div class="text">The Kgm Web</div>
+          <p>
+            Website Designer & Developer With years of experience, I will
+            modernize and optimize your website.
+          </p>
+        </div>
+      </div>
+
+      <div class="card wheather_app">
+        <div
+          class="box"
+          onclick="window.open('https://github.com/fatihkgm/QuizApp-IOS','_blank')"
+        >
+          <img src="/images/isoquiz.gif" alt="weather_app" />
+          <div class="text">IOS Quiz App</div>
+          <p>
+            It is a sample quiz app.I implemented 10 true and false
+            question.User choose the correct one and see the score
+          </p>
+        </div>
+      </div>
+      <div class="card dice_challenge">
+        <div
+          class="box"
+          onclick="window.open('https://mathstar.online/','_blank')"
+        >
+          <img src="/images/mathtutor.png" alt="dice_challenge" />
+          <div class="text">MathStar</div>
+          <p>
+            Please visit the web site i created for clients using
+            wordpress.Frontend and Backend creation.
+          </p>
+        </div>
+      </div>
+      <div class="card eduonline_profile">
+        <div
+          class="box"
+          onclick="window.open('https://hilaltasarim.com','_blank')"
+        >
+          <img src="/images/hilal.png" alt="githubProfile" />
+          <div class="text">WordPress</div>
+          <p>
+            I'm currently working on this website.Please click on and see the
+            design and function how it works.
+          </p>
+        </div>
+      </div>
+      <div class="card github_profile">
+        <div
+          class="box"
+          onclick="window.open('https://github.com/fatihkgm','_blank')"
+        >
+          <img src="/images/githubmy.png" alt="eduonlineweb" />
+          <div class="text">Find More</div>
+          <p>
+            Please have a look at my github profile to see my timeline of
+            contribution activity.<b>Note:</b>Some repositories are
+            private.Thank you .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact section start -->
+<%- include("partials/portfolio/contact"); -%> <%-
+include("partials/portfolio/footer"); -%>
