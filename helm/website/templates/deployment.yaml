@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: website-container
-        image: felixgokmen/portfoli-app-1:latest
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: Always
         resources:
           limits:
