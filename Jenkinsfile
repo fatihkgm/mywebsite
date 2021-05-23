@@ -7,8 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		                sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install website website --set image.repository=registry.hub.docker.com/felixgokmen/portfoli-app-1 --set image.tag=latest'
-              			
+                        sh '/usr/local/bin/helm upgrade --install mywebsite website --set image.repository=registry.hub.docker.com/felixgokmen/portfoli-app-1 --set image.tag=latest'
             }           
         }
     }
