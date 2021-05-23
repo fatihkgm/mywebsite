@@ -1,0 +1,41 @@
+#Deployment
+###controllers/pb-deploy.tml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: website
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+    maxSurge: 0
+    maxUnavailable: 1
+  minReadySeconds: 5
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: website
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      containers:
+      - name: website-container
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: Always
+        resources:
+          limits:
+            cpu: '1'
+            memory: '1Gi'
+          requests:
+            cpu: '1'
+            memory: '1Gi'
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
+
+
+
