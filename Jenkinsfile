@@ -12,17 +12,11 @@ pipeline {
             }
         }
         
-        stage('Copy Artifact') {
-           steps { 
-                   sh 'pwd'
-		   sh 'cp -r target/*.jar docker'
-           }
-        }
          
         stage('Build docker image') {
            steps {
                script {         
-                 def customImage = docker.build('felixgokmen/felix-portfolia', "./docker")
+                 def customImage = docker.build('felixgokmen/felix-portfolia', ".")
                  docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                  customImage.push("${env.BUILD_NUMBER}")
                  }                     
